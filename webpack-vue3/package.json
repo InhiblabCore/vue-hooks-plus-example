@@ -28,6 +28,7 @@
 		"html-webpack-plugin": "^5.5.0",
 		"postcss": "^8.4.21",
 		"postcss-loader": "^7.0.2",
+		"postcss-preset-env": "^8.0.0",
 		"vue": "^3.2.36",
 		"vue-hooks-plus": "^1.5.5"
 	}
