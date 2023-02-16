@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const CopyPlugin = require('copy-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const { DefinePlugin } = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 
@@ -8,6 +8,7 @@ module.exports = {
 	entry: './src/main.js',
 	mode: 'development',
 	output: {
+		publicPath: '',
 		path: path.resolve(__dirname, 'dist'), // 用path.resolve拼接得到一个绝对路径
 		filename: 'js/bundle.js',
 		clean: true, // 清空输出目录，webpack5开始可以直接配置清空，不再需要安装CleanWebpackPlugin
@@ -65,6 +66,14 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new CopyPlugin({
+			patterns: [
+				{
+					from: 'public',
+					to: '',
+				},
+			],
+		}),
 		new HtmlWebpackPlugin({
 			title: 'webpack+vue3',
 			template: './index.html',

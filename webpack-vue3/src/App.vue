@@ -5,11 +5,7 @@ import Setup from './components/Setup.vue'
 <template>
 	<div>
 		<a href="https://webpack.js.org/" target="_blank">
-			<img
-				src="	https://webpack.js.org/site-logo.1fcab817090e78435061.svg"
-				class="logo"
-				alt="Webpack logo"
-			/>
+			<img src="/logo.svg" class="logo" alt="Webpack logo" />
 		</a>
 		<a href="https://vuejs.org/" target="_blank">
 			<img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
