@@ -14,7 +14,7 @@
 		"axios": "^1.2.5",
 		"unplugin-auto-import": "^0.12.2",
 		"vue": "^3.2.45",
-		"vue-hooks-plus": "^1.5.5"
+		"vue-hooks-plus": "^1.8.2"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^4.0.0",
